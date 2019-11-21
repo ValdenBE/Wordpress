@@ -1,0 +1,38 @@
+/*
+Theme Name: CHIMMO
+
+Author: Team Christophe Michel
+
+Version: 1.0
+
+*/
+
+@import "global/normalize";
+
+@import "helpers/variables";
+
+@import "helpers/directionals";
+
+@import "helpers/functions";
+
+@import "helpers/mixins";
+
+@import "helpers/placeholders";
+
+@import "helpers/conditions";
+
+@import "layout/grid";
+
+@import "layout/header";
+
+@import "global/common";
+
+@import "components/headings";
+
+@import "components/buttons";
+
+@import "components/sections";
+
+@import "pages/index";
+
+@import "layout/footer";

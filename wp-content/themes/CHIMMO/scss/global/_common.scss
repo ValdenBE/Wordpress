@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+// LOAD FONTS
+@include font("roboto-regular", "/fonts/roboto/");
+@include font("roboto-bold", "/fonts/roboto/");
+@include font("roboto-condensed-regular", "/fonts/roboto/");
+@include font("report-semibold", "/fonts/report/", eot woff ttf);
+@include font("variable", "/fonts/variable/", eot woff ttf);
+@include font("variable-black", "/fonts/variable/", eot woff ttf);
+@include font("webhostinghub-glyphs", "/fonts/webhostinghub-glyphs/", eot ttf svg);
+
+*::selection {
+    background: #0000FF;
+    color: #FFFFFF;
+}
+
+*::-moz-selection {
+    background: #0000FF;
+    color: #FFFFFF;
+}
+
+html {
+    position: relative;
+    font-size: 16px;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: rem(16);
+    font-family: "Montserrat_Light";
+    color: #000000;
+}
+
+@media screen and (max-width: $screen-xs-max) {
+    .sm-hide {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $screen-md-max) {
+    .md-hide {
+        display: none;
+    }
+}
+
+@media screen and (min-width: $screen-md-max) {
+    .lg-hide {
+        display: none;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+input,
+select,
+a,
+i,
+button {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+span,
+p,
+a,
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+
+    &.extra-bold {
+        font-family: $mainFont_ExtraBold;
+        font-weight: 900;
+    }
+
+    &.bold {
+        font-family: $mainFont_Bold;
+        font-weight: 900;
+    }
+
+    &.semi-bold {
+        font-family: $mainFont_SemiBold;
+        font-weight: 900;
+    }
+
+
+    &.light {
+        font-family: $mainFont_Light;
+    }
+
+    &.light-blue {
+        font-family: $mainFont_Light;
+    }
+
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.no-select,
+img {
+    -webkit-touch-callout: none;
+    @include prefixer(user-select, none, webkit khtml moz o ms);
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+
+.no-transition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+}
+
+.break-long-words {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    @include prefixer(hyphens, auto, webkit moz ms);
+}
+
+.overflow-y-hidden {
+    overflow-y: hidden;
+}
+
+.overflow-x-hidden {
+    overflow-x: hidden;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.align-left {
+    text-align: $left !important;
+}
+
+.align-right {
+    text-align: $right !important;
+}
+
+.align-center {
+    text-align: center !important;
+}
+
+.clearfix {
+    @include clearfix();
+}
+
+.float-#{$left} {
+    float: #{$left};
+}
+
+.float-#{$right} {
+    float: #{$right};
+}
+
+
+/* 
+
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: calc(14px + 2 * ((100vw - 768px) / 457));
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 1px) {
+    html {
+        font-size: calc(12px + 4 * ((100vw - 1px) / 767));
+    }
+}
+ */
+
+span.light,
+p.light,
+a.light,
+strong.light,
+h1.light,
+h2.light,
+h3.light,
+h4.light,
+h5.light,
+h6.light {
+    font-family: "Montserrat_Light";
+}
+
+span.light-blue,
+p.light-blue,
+a.light-blue,
+strong.light-blue,
+h1.light-blue,
+h2.light-blue,
+h3.light-blue,
+h4.light-blue,
+h5.light-blue,
+h6.light-blue {
+    color: #74AAD5;
+}
+
+.break-long-words {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}

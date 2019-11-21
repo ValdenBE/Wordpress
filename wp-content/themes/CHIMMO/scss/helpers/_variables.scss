@@ -1,0 +1,23 @@
+$grid-cols-count: 18;
+$container-max-width: 1100px;
+
+$screen-xs-max: 768px; //ExtraSmall Devices Max Width
+$screen-sm-max: 991px; //Small Devices Max Width
+$screen-md-max: 1200px; //Medium Devices Max 
+
+$breakpoints: (sm: $screen-xs-max,
+    md: $screen-sm-max,
+    lg: $screen-md-max);
+
+
+// COLORS
+$main-background-color: #FFFFFF;
+$selection-background-color: #74AAD5;
+$main-font-color: #000000;
+$theme-color: #74AAD5;
+$light-blue: #74AAD5;
+$dark-blue: #13324B;
+$white: #FFFFFF;
+
+
+// FONTS
